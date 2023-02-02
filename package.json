@@ -1,0 +1,43 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll=2000",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "@babel/preset-react": "^7.10.4",
+        "axios": "^0.18.1",
+        "bootstrap": "^4.5.2",
+        "cross-env": "^5.2.1",
+        "jquery": "^3.5.1",
+        "laravel-mix": "^5.0.4",
+        "laravel-mix-criticalcss": "^1.0.1",
+        "lodash": "^4.17.15",
+        "popper.js": "^1.16.1",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.26.10",
+        "sass-loader": "^7.3.1"
+    },
+    "dependencies": {
+        "@rematch/core": "^1.4.0",
+        "@rematch/immer": "^1.2.0",
+        "feather-icons": "^4.28.0",
+        "laravel-echo": "^1.8.1",
+        "lodash.get": "^4.4.2",
+        "lodash.pickby": "^4.6.0",
+        "moment": "^2.25.3",
+        "pusher-js": "^7.0.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-redux": "^7.2.0",
+        "react-spinners": "^0.8.3",
+        "tailwindcss": "^1.7.3",
+        "tempusdominus-bootstrap-4": "^5.1.2",
+        "vue-template-compiler": "^2.6.11"
+    }
+}
